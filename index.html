@@ -1,26 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>week task</title>
-    <script src="text.js">Javascript</script>
-</head>
-<body>
-    <form>
-        <section class="biodata">
-            <input type="text" placeholder="First Name">
-        <input type="text" placeholder="Middle Name">
-        <input type="text" placeholder="Surname Name">
-        <input type="email" placeholder="Email">
-        <input type="text" placeholder="Address">
-        <input type="tel" placeholder="Phone number">
-        <input type="radio" placeholder="Male">
-        <input type="radio" placeholder="Female">
-        </section>
-        <input type="password" placeholder="Enter password">
-        <input type="submit" placeholder="submit">
-    </form>
-</body>
+    <link rel="stylesheet" href="style.css" />
+    <script src="text.js">
+      Javascript
+    </script>
+  </head>
+  <body class="formlayout">
+    <section class="form">
+      <form>
+        <div class="formarea">
+          <label for="first name">First Name</label>
+          <input type="text" name="First name" id="first name" /> <br />
+        </div>
+
+        <div class="formarea">
+          <label for="middle name">Middle Name</label>
+          <input type="text" name="middle name" id="middle name" /><br />
+        </div>
+
+        <div class="formarea">
+          <label for="surname">Surname</label>
+          <input type="text" name="surname" id="surname" /><br />
+        </div>
+
+        <div class="formarea">
+          <label for="Email">Enter your email address</label>
+          <input type="email" name="email" id="email" /><br />
+        </div>
+
+        <div class="formarea">
+          <label for="Address">Address</label>
+          <input type="text" name="Address" id="Address" /><br />
+        </div>
+
+        <div class="formarea">
+          <label for="phone number">Phone number</label>
+          <input type="tel" name="phone number" id="phone number" /><br />
+        </div>
+
+        <div class="formarea">
+          <label for="Gender">Select your gender</label>
+          <select>
+            <option>None</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option></select
+          ><br />
+        </div>
+
+        <div class="formarea">
+          <label for="password">Enter password</label>
+          <input
+            class="input area"
+            type="password"
+            name="password"
+            id="password"
+          />
+        </div>
+      </form>
+    </section>
+    <section>
+      <footer class="footer">
+        <button class="btn">Submit</button>
+      </footer>
+    </section>
+  </body>
 </html>
